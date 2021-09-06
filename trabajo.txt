@@ -1,0 +1,73 @@
+<!DOCTYPE html>// solo alcance a hacer esto
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+   <title>Ejercicio clase</title>
+</head>
+<body>
+   <canvas id="lineas" width="700px" height="700px" style="border: 2px solid gray;"></canvas>
+
+
+   <script>
+     window.addEventListener('load', () => {
+       let canvasLineas = document.getElementById('lineas');
+       let ctx = canvasLineas.getContext('2d');
+
+
+       ctx.beginPath(); 
+       ctx.arc(300, 300, 200, 0, Math.PI * 2, true); // Outer circle
+       ctx.moveTo(290, 240);
+       ctx.stroke(),
+       ctx.fillStyle="lightblue";
+       ctx.fill();
+      
+  
+        ctx.beginPath(); 
+       ctx.arc(220, 230, 70, 0, Math.PI * 2, true);
+       ctx.moveTo(458,200);
+       ctx.stroke();
+       ctx.fillStyle="white";
+       ctx.fill();
+        ctx.beginPath();     
+       ctx.arc(390, 220, 70, 0, Math.PI * 2, true);
+       ctx.moveTo(222,200);
+       ctx.stroke();
+       ctx.fillStyle="white";
+       ctx.fill();
+        ctx.beginPath(); 
+       ctx.arc(200, 210, 25, 0, Math.PI * 2, true,);
+       ctx.moveTo(435,200);
+       ctx.fillStyle="black";
+       ctx.fill();
+       
+        ctx.beginPath(); 
+       ctx.arc(410, 200, 25, 0, Math.PI * 2, true,);
+       ctx.moveTo(310,337);
+       ctx.fill();
+        ctx.beginPath(); 
+       ctx.arc(240, 350, 70,0, Math.PI * 2, true,);
+       ctx.moveTo(3,4);
+       ctx.stroke();
+       ctx.fillStyle="lightblue";
+       ctx.fill();
+       ctx.beginPath();
+       ctx.arc(210, 360, 50,0, Math.PI * 2, true,);
+       ctx.moveTo(6,8);
+       ctx.fillStyle = "lightblue";
+       ctx.fill();
+       ctx.beginPath();
+       ctx.arc(210, 360, 50,0, Math.PI * 2, true,);
+       ctx.moveTo(6,8);
+       ctx.fillStyle = "lightblue";
+       ctx.fill();
+       
+       ctx.beginPath();
+      
+       
+           
+      
+     });
+  </script>  
+</body>
+</html>
